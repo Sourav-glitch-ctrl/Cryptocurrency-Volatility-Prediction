@@ -1,6 +1,13 @@
-# Crypto Volatility Predictor
+# Cryptocurrency Volatility Predictor
 
-Forecasts next-period realized volatility for crypto OHLCV data using **XGBoost** and a **Streamlit** dashboard.
+Forecast next-period cryptocurrency volatility from OHLCV data using XGBoost and an interactive Streamlit dashboard.
+
+---
+
+## Overview
+
+This project builds a complete end-to-end ML pipeline for predicting crypto volatility.
+It includes data preprocessing, feature engineering, model training, and a user-friendly interface for inference and retraining.
 
 ---
 
@@ -12,6 +19,14 @@ Forecasts next-period realized volatility for crypto OHLCV data using **XGBoost*
 - **Data:** pandas, numpy | **Charts:** Plotly
 
 ---
+
+## Features Used
+
+- **Technical Indicators:** RSI, MACD, Bollinger Bands
+- **Volatility Measures:** - Realized Volatility
+                           - Parkinson Volatility
+                           - Garman-Klass Volatility
+- Lag Features for temporal dependency
 
 ## Project Structure
 
