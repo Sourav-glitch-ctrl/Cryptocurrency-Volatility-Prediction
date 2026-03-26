@@ -1,0 +1,36 @@
+# ============================================================
+# requirements.txt — Crypto Volatility Prediction
+# ============================================================
+
+# Core data science
+numpy>=1.24.0
+pandas>=2.0.0
+scipy>=1.10.0
+
+# Machine learning
+scikit-learn>=1.4.0   # 1.4+ for newer API compatibility
+joblib>=1.3.0
+xgboost>=2.0.0
+
+# Configuration
+PyYAML>=6.0
+
+# Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+plotly>=5.15.0
+
+# Streamlit app
+streamlit>=1.28.0
+
+# Notebook support
+jupyter>=1.0.0
+ipykernel>=6.0.0
+
+# Optional — LSTM model
+# tensorflow>=2.13.0
+# keras>=2.13.0
+
+# Testing
+pytest>=7.4.0
+pytest-cov>=4.1.0

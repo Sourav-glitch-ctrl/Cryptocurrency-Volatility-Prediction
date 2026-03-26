@@ -1,0 +1,65 @@
+# ── Python ─────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ── Virtual environments ────────────────────────────────────────────
+crypto/
+venv/
+.venv/
+env/
+ENV/
+
+# ── Jupyter ─────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ── Data files (large — don't commit raw/processed data to git) ─────
+data/raw/*.csv
+data/processed/*.csv
+data/external/*.csv
+
+# ── Trained model artifacts (large binary files) ────────────────────
+models/*.pkl
+models/*.joblib
+
+# ── Streamlit cache ─────────────────────────────────────────────────
+.streamlit/
+
+# ── IDE / editor ────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ── OS files ────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Logs ────────────────────────────────────────────────────────────
+*.log
+logs/
+
+# ── Test coverage ───────────────────────────────────────────────────
+.coverage
+htmlcov/
+.pytest_cache/
+
+# ── Distribution ────────────────────────────────────────────────────
+*.spec
+*.tar.gz
+*.zip
+
+# ── Secrets / credentials — NEVER commit these ──────────────────────
+.env
+*.key
+secrets.yaml

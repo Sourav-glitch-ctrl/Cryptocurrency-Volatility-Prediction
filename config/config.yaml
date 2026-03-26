@@ -1,0 +1,47 @@
+# ============================================================
+# config.yaml — Crypto Volatility Prediction Project
+# ============================================================
+
+# ---------------------
+# Data Paths
+# ---------------------
+data:
+  raw_path:       "data/raw/crypto_data.csv"
+  processed_path: "data/processed/processed_data.csv"
+
+# ---------------------
+# Feature Engineering
+# ---------------------
+features:
+  volatility_window: 10        # rolling window for realized volatility (rows)
+  lag_periods: [1, 2, 3, 5]   # lag sizes for lag features
+  rsi_window: 14
+  bollinger_window: 20
+  bollinger_std: 2.0
+  macd_fast: 12
+  macd_slow: 26
+  macd_signal: 9
+
+# ---------------------
+# Model
+# ---------------------
+model:
+  type:             "XGBRegressor"
+  n_estimators:     300
+  max_depth:        6
+  learning_rate:    0.05
+  subsample:        0.8
+  colsample_bytree: 0.8
+  random_state:     42
+  test_size:        0.2             # fraction of data used for testing
+
+model_paths:
+  model:   "models/trained_model.pkl"
+  scaler:  "models/scaler.pkl"
+
+# ---------------------
+# Logging
+# ---------------------
+logging:
+  level: "INFO"
+  format: "%(asctime)s | %(levelname)-8s | %(name)s | %(message)s"
