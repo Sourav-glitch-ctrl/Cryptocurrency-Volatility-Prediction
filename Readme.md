@@ -28,25 +28,6 @@ It includes data preprocessing, feature engineering, model training, and a user-
                            - Garman-Klass Volatility
 - Lag Features for temporal dependency
 
-## Project Structure
-
-```
-├── app/
-│   ├── app.py              ← Streamlit dashboard
-│   └── utils.py            ← Chart helpers
-├── src/
-│   ├── data/               ← loader, preprocess, validation
-│   ├── features/           ← build_features, indicators, volatility
-│   ├── models/             ← train, predict, evaluate
-│   ├── utils/              ← logger, config, helpers
-│   └── pipeline/           ← train_pipeline, inference_pipeline
-├── config/config.yaml      ← All settings
-├── data/raw/               ← Put your CSV here
-├── models/                 ← Saved artifacts (auto-generated)
-└── requirements.txt
-```
-
----
 
 ## Setup & Run
 
