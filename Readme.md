@@ -60,8 +60,8 @@ cd crypto-volatility-predictor
 ### 2. Create a virtual environment
 
 ```bash
-python -m venv crypto
-crypto\Scripts\activate        # Windows
+python -m venv env
+env\Scripts\activate        # Windows
 # source crypto/bin/activate   # macOS/Linux
 ```
 
